@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:  'header header header header'
+                           'navbar navbar navbar navbar'
+                          'section section aside aside'
+                          'footer footer footer footer';
+    grid-template-rows: 30vh 20vh 60vh 40vh;
+    grid-gap: 19px;   
+    background-color: olive;
+}
+
+header{
+    grid-area: header;
+    background-color: rebeccapurple
+}
+
+nav{
+    grid-area: navbar;
+    background-color: darkolivegreen
+}
+
+section{
+    grid-area: section;
+    background-color: lawngreen
+}
+
+aside{
+    grid-area: aside;
+    background-color: tomato
+}
+
+footer{
+    grid-area: footer;
+    background-color: hotpink
+}
+
