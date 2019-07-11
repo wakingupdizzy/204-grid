@@ -2,36 +2,74 @@ body{
     margin: 0;
     display: grid;
     grid-template-areas:  'header header header header'
-                           'navbar navbar navbar navbar'
-                          'section section aside aside'
+                           'navbar navbar navbar aside'
+                          'section section section aside'
                           'footer footer footer footer';
     grid-template-rows: 30vh 20vh 60vh 40vh;
     grid-gap: 19px;   
-    background-color: olive;
+    background-color: palevioletred;
 }
 
 header{
     grid-area: header;
-    background-color: rebeccapurple
+    background-color: rebeccapurple;
+    background-image: url(https://psimeuposso.files.wordpress.com/2014/04/mulher-dando-joia.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width:250px;
+    height: 90%;
+
 }
 
 nav{
     grid-area: navbar;
-    background-color: darkolivegreen
+    background-color: midnightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    color: black;
+    font-size: 20pt;
+
 }
 
 section{
     grid-area: section;
-    background-color: lawngreen
+    background-color: lawngreen;
 }
 
 aside{
     grid-area: aside;
-    background-color: tomato
+    background-color: skyblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+aside button{
+    margin-top: 20px;
+}
+
+aside input:nth-child(3){
+    margin-top: 10px;
 }
 
 footer{
     grid-area: footer;
-    background-color: hotpink
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    display: flex;
 }
 
